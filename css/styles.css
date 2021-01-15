@@ -1,1 +1,55 @@
 @import "./normalize.css";
+
+html {
+  /* 62.5% of 16px == 10px */
+  font-size: 62.5%;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: "eastman";
+  src: url("/fonts/eastman-black-webfont.woff2") format("woff2"),
+    url("/fonts/eastman-black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "eastman";
+  src: url("/fonts/eastman-medium-webfont.woff2") format("woff2"),
+    url("/fonts/eastman-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "eastman";
+  src: url("/fonts/eastman-regular-webfont.woff2") format("woff2"),
+    url("/fonts/eastman-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: eastman;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 7rem;
+  margin-bottom: 4.5rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 0;
+}
