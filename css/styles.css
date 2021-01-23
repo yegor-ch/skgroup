@@ -91,3 +91,21 @@ a {
 .link-arrow:hover::after {
   margin-left: 10px;
 }
+
+.link-arrow-group {
+  display: flex;
+}
+
+.link-arrow-group__label {
+  color: var(--color-secondary);
+  margin-right: 12px;
+}
+
+.link-arrow-group__icon {
+  width: 2.6rem;
+  transition: margin 0.15s;
+}
+
+.link-arrow-group:hover .link-arrow-group__icon {
+  margin-left: 8px;
+}
