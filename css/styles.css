@@ -6,6 +6,12 @@
   --color-body: #192444;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   /* 62.5% of 16px == 10px */
   font-size: 62.5%;
@@ -177,4 +183,35 @@ a {
 
 .list--bullet .list__item:nth-last-child(1)::before {
   display: none;
+}
+
+/*Buttons*/
+
+.btn {
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  padding: 2rem 6rem;
+  margin-top: 20px;
+  outline: none;
+}
+
+.btn--form {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.btn--form:hover {
+  background-color: #324e80;
+}
+
+.btn--outline {
+  color: var(--color-secondary);
+  border: 3px solid var(--color-primary);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-primary);
+  color: #fff;
 }
