@@ -231,3 +231,19 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/*Blocks*/
+
+.block {
+  padding: 6rem 2rem;
+  border: 2px solid tomato;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
