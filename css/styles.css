@@ -197,6 +197,28 @@ a {
   display: none;
 }
 
+/*Icons*/
+
+.icon {
+  width: 44px;
+  height: 44px;
+  margin-right: 1rem;
+}
+
+.icon--primary {
+  fill: #8390fa;
+  opacity: 90%;
+}
+
+.icon--white {
+  fill: #fff;
+}
+
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+}
+
 /*Buttons*/
 
 .btn {
