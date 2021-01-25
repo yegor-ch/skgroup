@@ -54,13 +54,13 @@ h2,
 h3,
 h4 {
   line-height: 1.1;
+  margin-top: 0;
 }
 
 h1 {
   font-size: 7rem;
   color: var(--color-primary);
   margin-bottom: 5rem;
-  margin-top: 0;
 }
 
 h2 {
@@ -149,10 +149,24 @@ a {
   padding-left: 1.5rem;
 }
 
+.list--dash,
+.list--dash--hover {
+  font-weight: 500;
+}
+
+.list--dash--hover .list__item {
+  margin-bottom: 3.5rem;
+}
+
 .list--dash--hover .list__item:hover::before {
   content: "\2014";
   padding-right: 0.7rem;
   padding-left: 0.5rem;
+  font-weight: 500;
+}
+
+.list--dash--hover .list__item:hover {
+  color: var(--color-primary);
 }
 
 .list--bullet .list__item {
@@ -351,4 +365,26 @@ a {
   width: 100%;
   justify-self: center;
   background: url(/images/banner_bg.png) no-repeat left / contain;
+}
+.about__description {
+  margin-bottom: 9rem;
+}
+
+.counters_group {
+  display: flex;
+}
+
+.counter {
+  margin-right: 2.4rem;
+  color: var(--color-primary);
+}
+
+.counter__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 7rem;
+}
+
+.counter__tagline {
+  display: block;
 }
