@@ -82,6 +82,7 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--color-body);
 }
 
 .link-arrow {
@@ -158,14 +159,14 @@ a {
   margin-bottom: 3.5rem;
 }
 
-.list--dash--hover .list__item:hover::before {
+.list--dash--hover .list__item:hover:before {
   content: "\2014";
   padding-right: 0.7rem;
   padding-left: 0.5rem;
   font-weight: 500;
+  color: var(--color-primary);
 }
-
-.list--dash--hover .list__item:hover {
+.list--dash--hover .list__item:hover a {
   color: var(--color-primary);
 }
 
@@ -366,6 +367,9 @@ a {
   justify-self: center;
   background: url(/images/banner_bg.png) no-repeat left / contain;
 }
+
+/*About section*/
+
 .about__description {
   margin-bottom: 9rem;
 }
@@ -387,4 +391,29 @@ a {
 
 .counter__tagline {
   display: block;
+}
+
+/*Offer section*/
+
+.offer__heading {
+  margin-bottom: 15rem;
+}
+
+/*Slides*/
+.slides .tab {
+  display: none;
+}
+
+.slides .tab:target {
+  display: block;
+}
+
+.tab__img__container {
+  text-align: center;
+}
+
+.tab__heading {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 3.5rem 0;
 }
