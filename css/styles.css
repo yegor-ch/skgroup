@@ -280,6 +280,10 @@ a {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .grid--2x4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /*Blocks*/
@@ -416,4 +420,35 @@ a {
   font-size: 2rem;
   font-weight: 400;
   margin: 3.5rem 0;
+}
+
+/*Services*/
+.services__heading {
+  margin-bottom: 8rem;
+}
+.services__container {
+  justify-items: center;
+  row-gap: 7rem;
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container {
+  align-items: center;
+  background: url(/images/circle.svg) no-repeat;
+  display: flex;
+  height: 130px;
+  justify-content: center;
+  width: 130px;
+}
+
+.services__item_img {
+  width: 75px;
+}
+
+.services__item__tagline {
+  margin-top: 30px;
 }
