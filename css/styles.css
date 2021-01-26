@@ -151,7 +151,8 @@ a {
 }
 
 .list--dash,
-.list--dash--hover {
+.list--dash--hover,
+.list--bullet {
   font-weight: 500;
 }
 
@@ -172,9 +173,8 @@ a {
 
 .list--bullet .list__item {
   position: relative;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
-  padding-left: 3rem;
+  margin-bottom: 3.5rem;
+  padding-left: 5rem;
   cursor: pointer;
 }
 
@@ -182,7 +182,7 @@ a {
   content: "";
   background-color: var(--color-body);
   width: 2px;
-  height: 5rem;
+  height: 7rem;
   top: 5px;
   left: 5px;
   position: absolute;
@@ -204,8 +204,11 @@ a {
 }
 
 .list--bullet .list__item:hover {
+  padding-left: 6.5rem;
+}
+
+.list--bullet .list__item:hover a {
   color: var(--color-primary);
-  padding-left: 4.5rem;
 }
 
 .list--bullet .list__item:nth-last-child(1)::before {
@@ -451,4 +454,14 @@ a {
 
 .services__item__tagline {
   margin-top: 30px;
+}
+
+/*Team*/
+
+.team__heading {
+  margin-bottom: 10.1rem;
+}
+
+.team__slides {
+  align-self: center;
 }
