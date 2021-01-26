@@ -465,3 +465,17 @@ a {
 .team__slides {
   align-self: center;
 }
+
+/*partners*/
+.partners__heading {
+  margin-bottom: 10rem;
+}
+.partners__items {
+  justify-items: center;
+  row-gap: 10rem;
+}
+
+.partners__img {
+  width: 230px;
+  margin-right: 20rem;
+}
