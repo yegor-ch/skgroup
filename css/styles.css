@@ -566,6 +566,11 @@ a {
 }
 
 /*Contacts*/
+
+.contacts {
+  padding-bottom: 20rem;
+}
+
 .contacts__heading {
   text-align: center;
   margin-bottom: 9rem;
@@ -624,4 +629,21 @@ a {
 
 .contacts__form .btn {
   margin-top: 9rem;
+}
+
+/*Footer*/
+
+.footer {
+  padding: 10rem;
+  background-color: var(--color-secondary);
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.footer .list .list__item a {
+  color: #fff;
+}
+
+.footer__contacts {
+  font-family: "Montserrat", sans-serif;
 }
