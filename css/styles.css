@@ -372,7 +372,6 @@ a {
 .hero__banner {
   width: 100%;
   justify-self: center;
-  background: url(/images/banner_bg.png) no-repeat left / contain;
 }
 
 /*About section*/
@@ -478,4 +477,51 @@ a {
 .partners__img {
   width: 230px;
   margin-right: 20rem;
+}
+
+/*News*/
+
+.news {
+  padding-left: 0;
+  padding-right: 0;
+  background: url(/images/news_bg.png) no-repeat;
+  background-position: 65% 70%;
+}
+
+.news__heading {
+  margin-bottom: 9.5rem;
+}
+
+.cart {
+  padding: 4rem 4rem;
+  height: 580px;
+  width: 520px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15.52px 0.48px rgba(176, 200, 245, 0.35);
+  background-color: #fff;
+}
+
+.cart__heading {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: var(--color-body);
+}
+
+.cart__img {
+  width: 440px;
+}
+
+.news__slider__arrow-prev {
+  background-color: #fff;
+  left: 20%;
+}
+
+.news__slider__arrow-next {
+  background-color: transparent;
+  right: 20%;
+}
+
+.news__slider__arrow-next img {
+  transform: rotate(180deg);
 }
