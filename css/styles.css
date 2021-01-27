@@ -4,6 +4,7 @@
   --color-primary: #837bfc;
   --color-secondary: #273f66;
   --color-body: #172443;
+  --color-input: #d0d0d0;
 }
 
 *,
@@ -562,4 +563,65 @@ a {
 
 .news__slider__arrow-next img {
   transform: rotate(180deg);
+}
+
+/*Contacts*/
+.contacts__heading {
+  text-align: center;
+  margin-bottom: 9rem;
+}
+.centralized {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(181, 158, 238, 0.6);
+  margin-bottom: 2.5rem;
+  width: 35rem;
+  position: relative;
+}
+
+.input-group:hover {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.input {
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem 2.5rem;
+  color: var(--color-body);
+  height: 4rem;
+}
+
+::placeholder {
+  color: var(--color-input);
+}
+
+.input__img {
+  width: 25px;
+}
+
+.input__label {
+  position: absolute;
+  left: 50px;
+  pointer-events: none;
+  color: var(--color-input);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.input-group .input:focus ~ .input__label,
+.input-group .input:not(:focus):valid ~ .input__label {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  top: -15px;
+  opacity: 1;
+}
+
+.contacts__form .btn {
+  margin-top: 9rem;
 }
