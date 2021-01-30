@@ -507,10 +507,10 @@ a {
 .projects__cart {
   padding: 5rem;
   background-color: #daddfd;
-  border-radius: 10px;
+  border-radius: 6px;
   width: 99rem;
   height: 53rem;
-  box-shadow: 0px 0px 24px 3.5px rgba(176, 200, 245, 0.38);
+  box-shadow: 0px 10px 25px 0px rgba(130, 123, 252, 0.3);
 }
 
 .projects__cart__heading {
@@ -556,8 +556,11 @@ a {
   height: 580px;
   width: 520px;
   border-radius: 10px;
-  box-shadow: 0px 2px 15.52px 0.48px rgba(176, 200, 245, 0.35);
+  box-shadow: 0px 10px 25px 0px rgba(176, 200, 245, 0.3);
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cart__heading {
@@ -568,6 +571,13 @@ a {
 
 .cart__img {
   width: 440px;
+}
+
+.cart__date-time {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  color: #bebdbd;
 }
 
 .news__slider__arrow-prev {
