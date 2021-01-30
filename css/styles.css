@@ -301,6 +301,7 @@ a {
 
 .block {
   padding: 6rem 2rem;
+  min-height: 100vh;
 }
 
 .block__heading {
@@ -394,6 +395,15 @@ a {
 
 /*About section*/
 
+.about__container {
+  position: relative;
+}
+
+.about__decor {
+  top: -60px;
+  right: 10px;
+}
+
 .about__description {
   margin-bottom: 6rem;
   line-height: 4rem;
@@ -484,6 +494,17 @@ a {
 
 .team__slides {
   align-self: center;
+  position: relative;
+}
+
+.team__decor-top {
+  top: -156px;
+  right: 0;
+}
+
+.team__decor-bottom {
+  bottom: -96px;
+  left: -98px;
 }
 
 /*Projects*/
@@ -597,7 +618,7 @@ a {
 /*Contacts*/
 
 .contacts {
-  padding-bottom: 20rem;
+  padding: 20rem 0;
 }
 
 .contacts__heading {
@@ -680,4 +701,21 @@ a {
 
 .footer__contacts {
   font-family: "Montserrat", sans-serif;
+}
+
+/*Decorations*/
+
+.decor {
+  position: absolute;
+}
+
+.hero__decor-left {
+  top: 0;
+  left: -20px;
+  z-index: 9999;
+}
+
+.hero__decor-right {
+  right: 0;
+  z-index: 9999;
 }
