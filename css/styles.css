@@ -607,6 +607,7 @@ a {
 .centralized {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .input-group {
@@ -667,6 +668,10 @@ a {
   background-color: var(--color-secondary);
   font-family: "Montserrat", sans-serif;
   color: #fff;
+}
+
+.footer .list .list__item {
+  margin-bottom: 1.6rem;
 }
 
 .footer .list .list__item a {
