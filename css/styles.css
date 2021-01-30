@@ -2,7 +2,7 @@
 
 :root {
   --color-primary: #837bfc;
-  --color-secondary: #273f66;
+  --color-secondary: #273e67;
   --color-body: #172443;
   --color-input: #d0d0d0;
 }
@@ -152,11 +152,6 @@ a {
   padding-left: 1.5rem;
 }
 
-.list--dash--hover,
-.list--bullet {
-  font-weight: 500;
-}
-
 .list--dash--hover .list__item {
   margin-bottom: 3.5rem;
 }
@@ -170,6 +165,7 @@ a {
 }
 .list--dash--hover .list__item:hover a {
   color: var(--color-primary);
+  font-weight: 500;
 }
 
 .list--bullet .list__item {
@@ -210,6 +206,7 @@ a {
 
 .list--bullet .list__item:hover a {
   color: var(--color-primary);
+  font-weight: 500;
 }
 
 .list--bullet .list__item:nth-last-child(1)::before {
@@ -445,6 +442,10 @@ a {
   margin: 3.5rem 0;
 }
 
+.tab__description {
+  line-height: 4rem;
+}
+
 /*Services*/
 .services__heading {
   margin-bottom: 8rem;
@@ -460,20 +461,19 @@ a {
 }
 
 .img-container {
-  align-items: center;
-  background: url(/images/circle.svg) no-repeat;
-  display: flex;
-  height: 130px;
-  justify-content: center;
-  width: 130px;
+  background: url(/images/circle-test.svg) no-repeat;
+  background-size: 170px;
+  background-position: center;
+  height: 160px;
+  width: 160px;
+  position: relative;
 }
 
 .services__item_img {
-  width: 75px;
-}
-
-.services__item__tagline {
-  margin-top: 30px;
+  width: 70px;
+  position: absolute;
+  top: 20%;
+  left: 29%;
 }
 
 /*Team*/
