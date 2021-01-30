@@ -16,4 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: "20rem",
     pagination: false,
   }).mount();
+
+  let offerItems = document.querySelectorAll(".tab__list .list__item a");
+
+  offerItems.forEach((e) => {
+    e.addEventListener("click", (e) => {
+      e.preventDefault();
+      let targetTab = document.querySelector(e.target.hash);
+      let parentDivName =
+        "." + e.target.hash.substr(1, e.target.hash.indexOf("-") - 1);
+      let activeTab = document.querySelector(
+        parentDivName + " .slides .active"
+      );
+      activeTab.classList.remove("active");
+      targetTab.classList.toggle("active");
+    });
+  });
 });
