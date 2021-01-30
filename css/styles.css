@@ -45,7 +45,7 @@ html {
 
 body {
   font-family: eastman;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--color-body);
   line-height: 1.5;
 }
@@ -67,10 +67,11 @@ h1 {
 h2 {
   color: var(--color-secondary);
   font-size: 4.5rem;
+  letter-spacing: 0.2rem;
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: var(--color-primary);
 }
@@ -419,7 +420,6 @@ a {
 }
 
 .tab__heading {
-  font-size: 2rem;
   font-weight: 400;
   margin: 3.5rem 0;
 }
@@ -493,7 +493,6 @@ a {
 }
 
 .projects__cart__heading {
-  font-size: 2rem;
   line-height: 3.6rem;
   color: var(--color-body);
 }
@@ -543,7 +542,6 @@ a {
 .cart__heading {
   margin-top: 50px;
   margin-bottom: 30px;
-  font-size: 2rem;
   color: var(--color-body);
 }
 
