@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: "29rem",
     pagination: false,
   }).mount();
-
+111
   new Splide(".projects__slider", {
     type: "loop",
     perPage: 1,
